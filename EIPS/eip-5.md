@@ -1,12 +1,13 @@
-### Title
-
-      EIP: 5
-      Title: Gas Usage for `RETURN` and `CALL*`
-      Author: Christian Reitwiessner <c@ethdev.com>
-      Status: Draft
-      Type: Standards Track
-      Layer: Consensus (hard-fork)
-      Created: 2015-11-22
+---
+eip: 5
+title: Gas Usage for `RETURN` and `CALL*`
+author: Christian Reitwiessner <c@ethdev.com>
+status: Superseded
+type: Standards Track
+category: Core
+created: 2015-11-22
+superseded-by: 211
+---
 
 ### Abstract
 
@@ -107,7 +108,7 @@ The change in semantics affects existing contracts in two ways:
    all be written in a way, though, such that objects in memory are _relocatable_,
    i.e. their absolute position in memory and their relative position to other
    objects does not matter. This is of course not the case for arrays, but they
-   are allocated in a single allocation and not with an intermidiate `CALL`.
+   are allocated in a single allocation and not with an intermediate `CALL`.
 
 
 ### Implementation
